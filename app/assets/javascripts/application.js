@@ -25,3 +25,4 @@ $('.smooth').on('click', function() {
     
     return false;
 });
+

@@ -23,19 +23,26 @@
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
+h1, .main-title {
+   font-family: 'Limelight', cursive
+}
 
 // Background Ground gradients
 
-.navbar, .home-callout {
+.navbar {
   //Gradient by provided by @_ighosh at uiGradient.com
   background: #2b5876;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .home-callout {
-  width: 100%;
-  height: 1000px;
-}
+  background-image: image-url('Header.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  max-height: 100vh;
+ }
 
 hr {
   width: 300px;
@@ -58,7 +65,7 @@ hr {
 .home-callout {
   color: white;
   margin-top: -20px;
-  padding-top: 50px;
+  padding-top: 70px;
   padding-bottom: 100px;
 }
 
@@ -71,22 +78,27 @@ hr {
   }
 }
 
+/*------------------------ABOUT SECTION-----------------*/
 .about-callout {
-background: #00c6ff;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+background-color: #ffffff; /* White */
+color: #555555;
 width: 100%;
-height: 400px;
+height: 700px;
 }
 .about-page-header {
   padding-top: 40px;
  }
+ .about-p {
+   line-height: 2em;
+   margin: 0;
+   padding: 10px;
+   text-align: left;
+ }
+
+ /*------------------------WORK SECTION-----------------*/
  .work-callout, {
-  background: #8e9eab;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+ background-color: #474e5d; /* Dark Blue */
+ color: #ffffff;
 
 width: 100%;
 height: 600px;

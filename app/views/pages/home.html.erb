@@ -1,5 +1,6 @@
-<div class="home-callout text-center container-fluid">
-  <h1>Kyle Nasulloev</h1>
+  <header id="home-page">
+  <div class="home-callout text-center container-fluid">
+    <h1>Kyle Nasulloev</h1>
   <h3>Aspiring Web Developer</h3>
   <hr>
   <div class="social-links">
@@ -9,13 +10,23 @@
     <a href="#", <i class="fas fa-envelope fa-3x"></i></a>
   </div>
 </div>
+</header>
 
 <!--ABOUT PAGE--->
 
 <div class="about-callout text-center container-fluid", id="about">
   <a id="about" class="smooth"></a>
-  <h1 class="about-page-header">About</h1>
-  <p></p>
+  <h1 class="about-page-header">Hi, I'm Kyle!</h1>
+  <h3>Aspiring Full-Stack Web Developer</h3>
+    <div class="row about-row">
+      <div class="col-md-6">
+        <%= image_tag "user1.jpg", class: "img-responsive img-circle" %>
+      </div>
+        <div class="col-md-6 about-p">
+          <p><b>Front End Development:</b> Using HTML, CSS, JavaScript and Bootstrap I build high quality responsive websites with exceptional user experience.</p>
+          <p><b>Back End Development:</b> Using Ruby on rails framework I build websites and web applications.</p>
+        </div>  
+    </div>
 </div>
 
 
@@ -24,7 +35,9 @@
 <div class="work-callout text-center container-fluid", id="work">
   <a id="work" class="smooth"></a>
   <h1 class="work-page-header">My Work</h1>
+  <img src="../images/tribute.png", alt="a tribute webpage">
   <p></p>
+  
 </div>
 
 <!--CONTACT PAGE--->
