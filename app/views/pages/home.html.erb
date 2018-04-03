@@ -1,6 +1,8 @@
-  <header id="home-page">
+  <!-------HOME PAGE------------->
+  
+  <header">
   <div class="home-callout text-center container-fluid">
-    <h1>Kyle Nasulloev</h1>
+    <h1 class="hvr-shutter-out-horizontal", id="main-text">Kyle Nasulloev</h1>
   <h3>Aspiring Web Developer</h3>
   <hr>
   <div class="social-links">
@@ -19,10 +21,10 @@
   <h1 class="about-page-header">Hi, I'm Kyle!</h1>
   <h3>Aspiring Full-Stack Web Developer</h3>
     <div class="row about-row">
-      <div class="col-md-6">
-        <%= image_tag "user1.jpg", class: "img-responsive img-circle" %>
+      <div class="col-md-5 col-md-offset-1">
+        <%= image_tag "user1.jpg", class: "avatar-pic img-responsive img-circle" %>
       </div>
-        <div class="col-md-6 about-p">
+        <div class="col-md-5 about-p">
           <p><b>Front End Development:</b> Using HTML, CSS, JavaScript and Bootstrap I build high quality responsive websites with exceptional user experience.</p>
           <p><b>Back End Development:</b> Using Ruby on rails framework I build websites and web applications.</p>
         </div>  
@@ -33,11 +35,30 @@
 <!--WORK PAGE--->
 
 <div class="work-callout text-center container-fluid", id="work">
-  <a id="work" class="smooth"></a>
-  <h1 class="work-page-header">My Work</h1>
-  <img src="../images/tribute.png", alt="a tribute webpage">
-  <p></p>
-  
+ <a id="work" class="smooth"></a>
+    <h1 class="work-page-header">My Work</h1>
+      <div class="row work-row">
+         <div class="col-md-5 col-md-offset-1">
+          <%= image_tag "tribute.png", class: "tribute-pic img-responsive thumbnail", alt: "tribute-page" %>
+          </div>
+              <div class="col-md-5 work-p">
+                <h4>Front End Development Project - Tribute Page</h4>
+                <p>One of the first projects I built on Free Code Camp. A personal tribute to favorite author or someone you admire.
+                 I chose a tribute page for Dr. Norman Borlaug, the man who saved a billion lives.
+              </p>
+                   <div class="languages-used">
+                      <span class="label label-primary">HTML5</span>
+                      <span class="label label-success">CSS</span>
+                      <span class="label label-info">Bootstrap</span>
+                    </div>
+                     <div class="work-buttons">
+                    <a class="work-btn btn btn-default fab fa-codepen" target="_blank" href="#codepen" role="button"> Demo</a>
+                    <a class="work-btn btn btn-default fab fa-github" target="_blank" href="#github" role="button"> Code</a>
+                  </div>
+                    
+              </div>
+          </div>
+      </div>
 </div>
 
 <!--CONTACT PAGE--->
