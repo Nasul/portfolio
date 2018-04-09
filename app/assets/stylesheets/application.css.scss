@@ -148,14 +148,63 @@ height: 600px;
 /*--------CONTACT SECTION-------*/
 
 .contact-callout {
-  background: #D3CCE3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  	 //Gradient by provided by @_ighosh at uiGradient.com
+  background: #2b5876;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
   width: 100%;
-  height: 400px;
+  height: 200px;
+  color: white;
+  font-size: 16px;
 }
 .contact-page-header {
-  padding-top: 40px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+
+.contact-me {
+      position: relative;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    color: #697082;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2em;
+    border: 2px solid #697082;
+    border-radius: 4px;
+    padding: 20px 65px;
+    transition: 0.3s ease-in-out;
+}
+.contact-me > span {
+  text-transform: none;
+  position: absolute;
+  color: white;
+  top: 20px;
+  left: 12px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+
+.contact-me:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid #697082;
+  border-radius: 50px;
+  background-color: #697082;
+  color: #697082;
+}
+.contact-me:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+  font-size: 14px;
+}
+.contact-me:before, contact-me:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 132px;
+  height: 25px;
 }
