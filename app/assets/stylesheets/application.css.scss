@@ -69,6 +69,11 @@ hr {
   width: 300px;
   border-width: 2px;
 }
+.line-breaker {
+  color: #ffffff;
+  width: 400px;
+  border-width: 2px;
+}
 // Nav Styles
 .navbar {
   border: none;
@@ -93,28 +98,40 @@ hr {
 #main-text {
   color: black;
 }
-.fa-github, .fa-linkedin, .fa-free-code-camp, .fa-envelope{
+.social-links, .linkedin, .git, .free, .envelope {
   padding-right: 5px;
   padding-left: 5px;
-  &:hover {
-    color: white;
-    opacity: 0.75;
-  }
+  color: white;
+  & a:link {
+  text-decoration: none;
+ }
+}
+
+.fa-envelope:hover, .fa-github:hover {
+  color:lightgrey;
+  
+ }
+.fa-linkedin:hover {
+  color: #0077B5;
+}
+.fa-free-code-camp:hover {
+  color: green;
 }
 
 /*------------------------ABOUT SECTION-----------------*/
-.avatar-pic {
-  height: 150px;
-  width: 150px;
+.profile-image {
+  height: 175px;
+  width: 175px;
 }
 .about-callout {
 background-color: #ffffff; /* White */
 color: #555555;
 width: 100%;
-height: 700px;
+height: 450px;
 }
-.about-page-header {
+.about-container {
   padding-top: 40px;
+  margin-top: 0px;
  }
  .about-p {
    line-height: 2em;
@@ -124,18 +141,19 @@ height: 700px;
  }
 
  /*------------------------WORK SECTION-----------------*/
- .tribute-pic {
- 
- }
+.work-buttons {
+  margin-top: 5px;
+  
+}
  .work-callout, {
  background-color: #474e5d; /* Dark Blue */
  color: #ffffff;
-
-width: 100%;
-height: 600px;
+ width: 100%;
+ height: 1250px;
 }
 .work-page-header {
-  padding-top: 40px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .work-p {
@@ -143,6 +161,11 @@ height: 600px;
    margin: 0;
    padding: 10px;
    text-align: left;
+}
+
+.first-row, .second-row, .third-row {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /*--------CONTACT SECTION-------*/
@@ -154,7 +177,7 @@ height: 600px;
   background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
   width: 100%;
-  height: 200px;
+  height: 250px;
   color: white;
   font-size: 16px;
 }
@@ -163,7 +186,9 @@ height: 600px;
   padding-bottom: 20px;
 }
 
-
+.email-me {
+  margin-top: 40px;
+}
 .contact-me {
       position: relative;
     -webkit-perspective: 1000;
@@ -177,6 +202,7 @@ height: 600px;
     border-radius: 4px;
     padding: 20px 65px;
     transition: 0.3s ease-in-out;
+    color: white;
 }
 .contact-me > span {
   text-transform: none;
@@ -192,8 +218,8 @@ height: 600px;
   transition: 0.3s ease-in-out;
   border: 2px solid #697082;
   border-radius: 50px;
-  background-color: #697082;
-  color: #697082;
+  background-color: #0077B5;
+  color: #0077B5;
 }
 .contact-me:hover > span {
   opacity: 1;
