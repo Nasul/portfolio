@@ -133,12 +133,7 @@ height: 450px;
   padding-top: 40px;
   margin-top: 0px;
  }
- .about-p {
-   line-height: 2em;
-   margin: 0;
-   padding: 10px;
-   text-align: left;
- }
+
 
  /*------------------------WORK SECTION-----------------*/
 .work-buttons {
@@ -154,13 +149,6 @@ height: 450px;
 .work-page-header {
   padding-top: 30px;
   padding-bottom: 10px;
-}
-
-.work-p {
-   line-height: 2em;
-   margin: 0;
-   padding: 10px;
-   text-align: left;
 }
 
 .first-row, .second-row, .third-row {
@@ -226,11 +214,14 @@ height: 450px;
   transition: all 0.25s ease-in-out 0.1s;
   font-size: 14px;
 }
-.contact-me:before, contact-me:after {
+.contact-me:before, .contact-me:after {
   content: "";
   position: absolute;
   top: -14px;
   left: -12px;
   width: 132px;
   height: 25px;
+}
+.contact-envelope {
+  padding-left: 4px;
 }
