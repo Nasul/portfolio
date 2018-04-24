@@ -21,6 +21,9 @@
 @import 'font-awesome';
 
 // Typography styles
+body {
+  position: relative;
+}
 h2, h3, h4, h5 {
   font-family: 'Open Sans', sans-serif;
 }
@@ -120,17 +123,18 @@ hr {
 
 /*------------------------ABOUT SECTION-----------------*/
 .profile-image {
-  height: 175px;
-  width: 175px;
+  height: 200px;
+  width: 200px;
 }
 .about-callout {
 background-color: #ffffff; /* White */
 color: #555555;
-width: 100%;
-height: 450px;
+width: auto;
+height: auto;
 }
 .about-container {
-  padding-top: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   margin-top: 0px;
  }
 
@@ -143,8 +147,8 @@ height: 450px;
  .work-callout, {
  background-color: #474e5d; /* Dark Blue */
  color: #ffffff;
- width: 100%;
- height: 1250px;
+ width: auto;
+ height: auto;
 }
 .work-page-header {
   padding-top: 30px;
@@ -158,25 +162,15 @@ height: 450px;
 
 /*--------CONTACT SECTION-------*/
 
-.contact-callout {
-  	 //Gradient by provided by @_ighosh at uiGradient.com
-  background: #2b5876;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-  width: 100%;
-  height: 250px;
-  color: white;
-  font-size: 16px;
+.email-me {
+  padding-bottom: 20px;
 }
 .contact-page-header {
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
-.email-me {
-  margin-top: 40px;
-}
+
 .contact-me {
       position: relative;
     -webkit-perspective: 1000;
@@ -224,4 +218,17 @@ height: 450px;
 }
 .contact-envelope {
   padding-left: 4px;
+}
+
+/*--------FOOTER SECTION-------*/
+.footer-callout {
+  	 //Gradient by provided by @_ighosh at uiGradient.com
+  background: #2b5876;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  width: auto;
+  height: auto;
+  color: white;
+  font-size: 16px;
 }
