@@ -3,7 +3,7 @@
   <head>
     <title>Portfolio</title>
     <%= csrf_meta_tags %>
-    
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800,Kaushan+Script|Lobster|Open+Sans|Roboto|Orbitron|Syncopate|Limelight" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -33,7 +33,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-      <a href="/" class="navbar-brand"><i class="fas fa-home"></i> Home</a> 
+      <a href="/" class="navbar-brand"><i><%= image_tag "mylogo.svg", :class => "style_logo" %></i></a> 
       </div>
       <div class="collapse navbar-collapse" id="main-nav-collapse">
         <ul class="nav navbar-nav navbar-right">

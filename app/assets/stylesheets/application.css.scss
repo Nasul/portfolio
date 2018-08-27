@@ -22,58 +22,63 @@
 
 // Typography styles
 body {
-  position: relative;
+  margin: 0;
 }
-h2, h3, h4, h5 {
+h3, h5 {
   font-family: 'Open Sans', sans-serif;
 }
 h1 {
-   font-family: 'Limelight', cursive
-  
+   font-family: 'Roboto', cursive
 }
+h2 {
+  font-family: 'Lobster', cursive;
+  color: #778899;
+}   
 
-//--------------HOME SECTION---------------------//
-
-/* Shutter Out Horizontal */
-.hvr-shutter-out-horizontal {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  background: #e1e1e1;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  padding: 20px;
-  
+.navbar-default {
+  background-color: transparent !important;
+  border-color: transparent;
+  background-image: none;
+  box-shadow: none;
 }
-
-// Background Ground gradients
-
-.navbar {
-  //Gradient by provided by @_ighosh at uiGradient.com
-  background: #2b5876;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.style_logo {
+  height: 85px;
+  width: 66px;
+  
 }
 
 .home-callout {
-  background-image: image-url('Header.jpg');
+  /* background-image: image-url('Header.jpg'); old-background-image */ 
+  background-color: white;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  max-height: 100vh;
+  height: auto;
+  max-height: 80vh;
+ }
+ 
+ //Home page styles
+.home-callout {
+  color: white;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+ .home-callout-row {
+   margin: 20px 0;
+   color: black;
  }
 
 hr {
-  width: 300px;
-  border-width: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #00B3FF;
+    width: 300px;
+    border-width: 2px;
 }
 .line-breaker {
-  color: #ffffff;
+  color: #00B3FF;
   width: 400px;
   border-width: 2px;
 }
@@ -83,31 +88,41 @@ hr {
 }
 
 .navbar-default .navbar-brand,.navbar-default .navbar-nav > li > a{
-  color: white;
+  color: #00B3FF;
   &:hover {
     color: white;
     opacity: 0.75;
   }
 }
-
-//Home page styles
-.home-callout {
-  color: white;
-  margin-top: -20px;
-  padding-top: 80px;
-  padding-bottom: 100px;
-}
+.navbar-default .navbar-toggle {
+    border-color: #00B3FF;
+    & .icon-bar {
+      background-color: #00B3FF;
+    }
+}  
 
 #main-text {
   color: black;
 }
-.social-links, .linkedin, .git, .free, .envelope {
-  padding-right: 5px;
-  padding-left: 5px;
-  color: white;
-  & a:link {
+
+.social-links, a:link {
   text-decoration: none;
  }
+.git {
+  color: #55555;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.linkedin {
+  color: #4875B4;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.free {
+  color: #006400;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .fa-envelope:hover, .fa-github:hover {
@@ -121,14 +136,18 @@ hr {
   color: green;
 }
 
-/*------------------------ABOUT SECTION-----------------*/
 .profile-image {
-  height: 200px;
-  width: 200px;
+  margin-top: 30px;
 }
+
+/*------------------------ABOUT SECTION-----------------*/
+
+ //Gradient by provided by @_ighosh at uiGradient.com
 .about-callout {
-background-color: #ffffff; /* White */
-color: #555555;
+background: #2b5876;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
 width: auto;
 height: auto;
 }
@@ -138,36 +157,21 @@ height: auto;
   margin-top: 0px;
  }
 
-
  /*------------------------WORK SECTION-----------------*/
-.work-buttons {
-  margin-top: 5px;
-  
-}
- .work-callout, {
- background-color: #474e5d; /* Dark Blue */
- color: #ffffff;
- width: auto;
- height: auto;
-}
-.work-page-header {
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
 
-.first-row, .second-row, .third-row {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
 
 /*--------CONTACT SECTION-------*/
 
 .email-me {
   padding-bottom: 20px;
+  background: #2b5876;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .contact-page-header {
   padding-top: 10px;
   padding-bottom: 5px;
+ 
 }
 
 
